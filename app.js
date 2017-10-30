@@ -8,17 +8,29 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+var login = ""
+var trying = ""
+var correct = "{ userName: 'pi, ip' }"
+var userName = {}
+
 app.get('/', function (req, res) {
   console.log("working")
-  var response = ""
-  res.render('index.ejs', { response})
-
+  res.render('index.ejs', { userName})
+    login = req.body.userName
+  console.log(correct)
 })
+
+var answer = ""
+if (login = correct ){
+ answer  = "yes";
+} else {
+	answer = "no";
+}
 
 app.post('/', function (req, res) {
   console.log(req.body)
-  response = req.body.userResponse
-  res.render('index.ejs', {response})
+  res.render('index.ejs', {answer})
+  console.log(answer)
 })
 
 app.set('view engine','ejs')

@@ -1,7 +1,6 @@
 {
-  "name": "package",
+  "name": "One",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -16,10 +15,11 @@
     "type": "git",
     "url": "git+https://github.com/Burlybear/ajax-practise.git"
   },
-  "author": "",
+  "author": "Nikolas Hamilton",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Burlybear/ajax-practise/issues"
   },
-  "homepage": "https://github.com/Burlybear/ajax-practise#readme"
+  "homepage": "https://github.com/Burlybear/ajax-practise#readme",
+  "description": ""
 }
